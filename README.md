@@ -14,6 +14,7 @@
 - 补全更多频段
 - 修改alcid为99（解决了kernel_task占用高和有线耳机只有电流声）
 - 更新部分kext
+- 删除部分无用kext
 
 #### 第一版
 - 修改smbios为macobookair9,1（2020）
