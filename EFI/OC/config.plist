@@ -64,14 +64,6 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-PNLF.aml</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-PNLF.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
                     <string>SSDT-RTCAWAC.aml</string>
                     <key>Enabled</key>
                     <true/>
@@ -101,6 +93,14 @@
                     <true/>
                     <key>Path</key>
                     <string>SSDT-XOSI.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>SSDT-PNLF.aml</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-PNLF.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -332,18 +332,63 @@
         <dict>
             <key>Add</key>
             <dict>
+                <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,31,3</string>
+                    <key>device_type</key>
+                    <string>Multimedia audio controller</string>
+                    <key>hda-gfx</key>
+                    <string>onboard-1</string>
+                    <key>layout-id</key>
+                    <data>YwAAAA==</data>
+                    <key>model</key>
+                    <string>Comet Lake PCH-LP cAVS</string>
+                </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
+                    <key>AAPL,GfxYTile</key>
+                    <data>AQAAAA==</data>
                     <key>AAPL,ig-platform-id</key>
-                    <data>CQClPg==</data>
+                    <data>CQCbPg==</data>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,2,0</string>
                     <key>device-id</key>
                     <data>mz4AAA==</data>
+                    <key>device_type</key>
+                    <string>VGA compatible controller</string>
+                    <key>enable-hdmi-dividers-fix</key>
+                    <data>AQAAAA==</data>
+                    <key>enable-hdmi20</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con0-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con0-pipe</key>
+                    <data>EgAAAA==</data>
+                    <key>framebuffer-con1-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con1-pipe</key>
+                    <data>EgAAAA==</data>
+                    <key>framebuffer-con1-type</key>
+                    <data>AAgAAA==</data>
+                    <key>framebuffer-con2-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con2-pipe</key>
+                    <data>EgAAAA==</data>
+                    <key>framebuffer-con2-type</key>
+                    <data>AAgAAA==</data>
                     <key>framebuffer-fbmem</key>
                     <data>AACQAA==</data>
                     <key>framebuffer-patch-enable</key>
                     <data>AQAAAA==</data>
                     <key>framebuffer-stolenmem</key>
                     <data>AAAwAQ==</data>
+                    <key>framebuffer-unifiedmem</key>
+                    <data>AAAAgA==</data>
+                    <key>hda-gfx</key>
+                    <string>onboard-1</string>
+                    <key>model</key>
+                    <string>Intel CoffeeLake-H GT2 [UHD Graphics 630]</string>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -789,6 +834,42 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>USBToolBox.kext</string>
+                    <key>Comment</key>
+                    <string>V1.2.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/USBToolBox</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>UTBMap.kext</string>
+                    <key>Comment</key>
+                    <string>V1.1</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>AirportItlwm13.kext</string>
                     <key>Comment</key>
                     <string>V2.3.0</string>
@@ -810,42 +891,6 @@
                     <string>XHCI-unsupported.kext</string>
                     <key>Comment</key>
                     <string>V0.9.2</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string></string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>USBToolBox.kext</string>
-                    <key>Comment</key>
-                    <string>V1.1.1</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/USBToolBox</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>UTBMap.kext</string>
-                    <key>Comment</key>
-                    <string>V1.1</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -886,6 +931,24 @@
                     <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/USBInjectAll</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>HibernationFixup.kext</string>
+                    <key>Comment</key>
+                    <string>V1.5.4</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/HibernationFixup</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -996,7 +1059,7 @@
                 <key>ThirdPartyDrives</key>
                 <false/>
                 <key>XhciPortLimit</key>
-                <false/>
+                <true/>
             </dict>
             <key>Scheme</key>
             <dict>
@@ -1443,7 +1506,7 @@
                 <key>TextRenderer</key>
                 <string>BuiltinGraphics</string>
                 <key>UIScale</key>
-                <integer>0</integer>
+                <integer>1</integer>
                 <key>UgaPassThrough</key>
                 <false/>
             </dict>

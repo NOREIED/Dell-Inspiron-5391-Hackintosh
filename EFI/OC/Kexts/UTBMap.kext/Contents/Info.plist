@@ -22,22 +22,21 @@
 	<string>1.1</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>XHC</key>
+		<key>0:20:0</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
+			<string>com.dhinakg.USBToolBox.kext</string>
 			<key>IOClass</key>
-			<string>AppleUSBHostMergeProperties</string>
-			<key>IOParentMatch</key>
+			<string>USBToolBox</string>
+			<key>IOMatchCategory</key>
+			<string>USBToolBox</string>
+			<key>IOPropertyMatch</key>
 			<dict>
-				<key>IOPropertyMatch</key>
-				<dict>
-					<key>pcidebug</key>
-					<string>0:20:0</string>
-				</dict>
+				<key>pcidebug</key>
+				<string>0:20:0</string>
 			</dict>
 			<key>IOProviderClass</key>
-			<string>AppleUSBHostController</string>
+			<string>IOPCIDevice</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
 				<key>port-count</key>
@@ -46,7 +45,7 @@
 				</data>
 				<key>ports</key>
 				<dict>
-					<key>HS01</key>
+					<key>PRT1</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
@@ -55,79 +54,7 @@
 						AQAAAA==
 						</data>
 					</dict>
-					<key>HS02</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>port</key>
-						<data>
-						AgAAAA==
-						</data>
-					</dict>
-					<key>HS03</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>port</key>
-						<data>
-						AwAAAA==
-						</data>
-					</dict>
-					<key>HS04</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>9</integer>
-						<key>port</key>
-						<data>
-						BAAAAA==
-						</data>
-					</dict>
-					<key>HS05</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>port</key>
-						<data>
-						BQAAAA==
-						</data>
-					</dict>
-					<key>HS06</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>port</key>
-						<data>
-						BgAAAA==
-						</data>
-					</dict>
-					<key>HS07</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>port</key>
-						<data>
-						BwAAAA==
-						</data>
-					</dict>
-					<key>HS08</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>port</key>
-						<data>
-						CAAAAA==
-						</data>
-					</dict>
-					<key>HS09</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>port</key>
-						<data>
-						CQAAAA==
-						</data>
-					</dict>
-					<key>HS10</key>
+					<key>PRT10</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
@@ -136,7 +63,7 @@
 						CgAAAA==
 						</data>
 					</dict>
-					<key>HS11</key>
+					<key>PRT11</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
@@ -145,7 +72,7 @@
 						CwAAAA==
 						</data>
 					</dict>
-					<key>HS12</key>
+					<key>PRT12</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
@@ -154,7 +81,7 @@
 						DAAAAA==
 						</data>
 					</dict>
-					<key>SS01</key>
+					<key>PRT13</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
@@ -163,7 +90,7 @@
 						DQAAAA==
 						</data>
 					</dict>
-					<key>SS02</key>
+					<key>PRT14</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
@@ -172,7 +99,7 @@
 						DgAAAA==
 						</data>
 					</dict>
-					<key>SS03</key>
+					<key>PRT15</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
@@ -181,7 +108,7 @@
 						DwAAAA==
 						</data>
 					</dict>
-					<key>SS04</key>
+					<key>PRT16</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
@@ -190,7 +117,7 @@
 						EAAAAA==
 						</data>
 					</dict>
-					<key>SS05</key>
+					<key>PRT17</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
@@ -199,7 +126,7 @@
 						EQAAAA==
 						</data>
 					</dict>
-					<key>SS06</key>
+					<key>PRT18</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
@@ -208,11 +135,86 @@
 						EgAAAA==
 						</data>
 					</dict>
+					<key>PRT2</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>
+						AgAAAA==
+						</data>
+					</dict>
+					<key>PRT3</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>
+						AwAAAA==
+						</data>
+					</dict>
+					<key>PRT4</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>9</integer>
+						<key>port</key>
+						<data>
+						BAAAAA==
+						</data>
+					</dict>
+					<key>PRT5</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>
+						BQAAAA==
+						</data>
+					</dict>
+					<key>PRT6</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>
+						BgAAAA==
+						</data>
+					</dict>
+					<key>PRT7</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>
+						BwAAAA==
+						</data>
+					</dict>
+					<key>PRT8</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>
+						CAAAAA==
+						</data>
+					</dict>
+					<key>PRT9</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>
+						CQAAAA==
+						</data>
+					</dict>
 				</dict>
 			</dict>
-			<key>model</key>
-			<string>MacBookPro16,3</string>
 		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.dhinakg.USBToolBox.kext</key>
+		<string>1.0.0</string>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Root</string>
